@@ -41,10 +41,13 @@ if(abhiKaRepo.length !==0)
 
 <div className="col-lg-4">
 <div className="card text-white bg-primary mb-4">
-  <div className="card-header text-center">{repo.name}</div>
+  <div className="card-header text-center" style={{fontSize: "1rem", fontWeight: "700"}} >{repo.name}</div>
   <div className="card-body">
-    <h5 className="card-title">Primary card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 className="text-white">Created: {repo.created_at} </h5>
+    <h5 className="text-white">Language: {repo.language}</h5>
+<div className="text-center" > 
+<a href={repo.html_url} rel="noopener noreferrer" target="_blank" className="btn btn-warning btn-outline btn-block" >View on Github</a>
+</div>    
   </div>
 </div>
     

@@ -23,7 +23,7 @@ const Dashboard = () => {
     };
     
     gitHubData();
-  }, [context.user.userName]);
+  });
   
   if(context.user)
    {

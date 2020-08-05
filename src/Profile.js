@@ -53,7 +53,7 @@ return (
 <div style={{backgroundColor: "#10A881"}} > <br/>
 <div className="container" style={{backgroundColor: "#E5B143", borderRadius: "370px 0px 370px 0px"}} > 
 <br/>
-<div className="row" style={{height: "100vh"}} >
+<div className="row" style={{height: "90vh"}} >
 <div className="md-4 mx-auto">
 <div className="card" style={{ background: "#222831", borderRadius: "70px 70px 0px 0px" }} >
 <div className="card-body text-center">
@@ -76,10 +76,13 @@ Followers: {myuser.followers}
 Following: {myuser.following}  
 </h5>   
 <h5 className="ml-2">
-Repos: {myuser.public_repos}  
+Repository: {myuser.public_repos}  
 </h5>
-<div className="text-center" >
-<button className="btn btn-primary" href="https://github.com/beingabhi007" >View on GitHub</button> </div>
+<br/>
+<div className="text-center" > 
+<a href={myuser.html_url}  style={{width: "80%", margin: "0 auto"}}  rel="noopener noreferrer" target="_blank" className="btn btn-primary btn-block" >View on Github</a>
+</div>
+  
 <br/>
 </div>
 </div> <br/>

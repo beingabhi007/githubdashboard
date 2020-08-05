@@ -10,8 +10,8 @@ const Login = () => {
   const context = useContext(UserContext)
   
   const history = useHistory();
-  const [email, setEmail] = useState("abhisahu12345@gmail.com");
-  const [password, setPassword] = useState("123456")
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("")
 
   
   const handleSignin = () => { 
