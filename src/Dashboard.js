@@ -8,22 +8,22 @@ const Dashboard = () => {
 
   const context = useContext(UserContext);
   const [myuser, setMyuser] = useState(null);
-  
-  const gitHubData = async () => {
-    try {
-      const { data } = await Axios.get(
-        `https://api.github.com/users/${context.user.userName}`
-      );
-      setMyuser(data);
-
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
   useEffect(() => {
+    
+    const gitHubData = async () => {
+      try {
+        const { data } = await Axios.get(
+          `https://api.github.com/users/${context.user.userName}`
+        );
+        setMyuser(data);
+  
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    
     gitHubData();
-  }, []);
+  }, [context.user.userName]);
   
   if(context.user)
    {

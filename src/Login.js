@@ -50,7 +50,7 @@ const Login = () => {
 <div className="col-lg-5" style={{backgroundColor: "#2ecc72"}} id="section1" > 
 <div className="first"> 
 <h1 className="text-white text-center mt-5">Welcome Back</h1> 
-<img src="https://learncodeonline.in/login/images/111.svg" alt="login  image"  id="image" />    
+<img src="https://learncodeonline.in/login/images/111.svg" alt="loginvector"  id="image" />    
 </div>
 </div> 
 

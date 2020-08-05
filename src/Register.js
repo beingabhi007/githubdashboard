@@ -1,7 +1,6 @@
 import React, {useState} from "react" 
 import firebase from "firebase/app";
 import {Link} from "react-router-dom"
-import { Toast, ToastContainer, toast } from "react-toastify"
 
 const Register = () => {
   
@@ -29,12 +28,11 @@ const Register = () => {
 
   return(
     <section> 
-    <ToastContainer/>
     <div className="row"> 
     <div className="col-lg-5" style={{backgroundColor: "#2ecc72"}} id="section1" >
     <div className="first">    
     <h1 className="text-white text-center mt-5">Get Started</h1> 
-    <img src="https://learncodeonline.in/login/images/111.svg" alt="image" id="image" />    
+    <img src="https://learncodeonline.in/login/images/111.svg" alt="myvector" id="image" />    
     </div>
     </div>
     

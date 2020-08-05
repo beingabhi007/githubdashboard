@@ -1,5 +1,4 @@
-import React, {useState, useEffect, useContext} from 'react'
-import Axios from 'axios'
+import React, {useContext} from 'react'
 import { UserContext } from "./Context";
 import RepoUi from './RepoUi';
 const Profile =  ({myuser})  => {
