@@ -27,7 +27,7 @@ const {data} = await Axios.get(repoUrl)
   }, [repoUrl]);
 
 
-if(setAbhiKaRepo) 
+if(abhiKaRepo.length !=0) 
 {
  return(   
  <section className="bg-success" >
@@ -54,10 +54,15 @@ if(setAbhiKaRepo)
  </div>
  </section>
 )
- }
- else{
-   return <h1 className="text-danger text-center" >[Repo h hi nhi toh kya dekhne aaye ho {"=>"} baba g ka <b>THULLU</b>]</h1>
- }
+ } 
+else
+{
+  return <p className="text-white text-center bg-dark" style={{marginBottom: "0rem"}} >You don't have any Repo.</p>
 } 
+ }
+//  else{
+//    return <h1 className="text-danger text-center" >[Repo h hi nhi toh kya dekhne aaye ho {"=>"} baba g ka <b>THULLU</b>]</h1>
+//  }
+
 
 export default RepoUi;

@@ -1,13 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Link, useHistory, Redirect } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import { UserContext } from "./Context";
 import Axios from "axios";
 import Profile from "./Profile";
-import notFound from "./notFound"
 
 const Dashboard = () => {
 
-  const history = useHistory();
   const context = useContext(UserContext);
   const [myuser, setMyuser] = useState(null);
   
