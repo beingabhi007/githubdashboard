@@ -30,7 +30,7 @@ const {data} = await Axios.get(repoUrl)
 if(abhiKaRepo.length !==0) 
 {
  return(   
- <section className="bg-success" >
+ <section style={{backgroundColor: "#1D3557"}} >
      <div className="container">    
      <br/>
 <p id="text3" >Repositories</p>  <br/>  

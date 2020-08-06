@@ -1,9 +1,10 @@
 import React, {useState} from "react" 
 import firebase from "firebase/app";
-import {Link} from "react-router-dom"
+import {Link, useHistory} from "react-router-dom"
 
 const Register = () => {
   
+  const history = useHistory();
   
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("")
@@ -13,7 +14,8 @@ const Register = () => {
     .auth()
     .createUserWithEmailAndPassword(email, password)
     .then((res) => {
-      console.log(res);
+      console.log(res); 
+      history.push("/login");
     })
     .catch((error) => {
       console.log(error);
