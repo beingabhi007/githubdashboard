@@ -61,7 +61,7 @@ const Login = () => {
 <h2 className="text-white text-center " >Login</h2><br/>
 <div className="formcontent" >
 <form onSubmit={handleSubmit}>
-<input type="text"  style={{width: "100%" , padding: "8px"}} placeholder="Username" id="username" required /> <br/><br/>
+<input type="text"  style={{width: "100%" , padding: "8px"}} placeholder="Enter Github username" id="username" required /> <br/><br/>
 <input type="email" style={{width: "100%" , padding: "8px"}} placeholder="Email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required/> <br/> <br/>
 <input type="password" placeholder="Password" style={{width: "100%", padding: "8px"}} name="password" value={password} onChange={(e) => setPassword(e.target.value)} required/> <br/><br/> 
   <div id="errorMsg" style={{color:"red"}} ></div>
