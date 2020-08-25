@@ -1,9 +1,13 @@
 import React, {useContext} from 'react'
 import { UserContext } from "./Context";
 import RepoUi from './RepoUi';
+import { useHistory } from 'react-router-dom';
+
 const Profile =  ({myuser})  => {
-  const context = useContext(UserContext);
-  
+
+const context = useContext(UserContext);
+const history = useHistory();
+
   // const [myrepos, setMyrepos] = useState(null) 
   // const repodata = async () => {
   // try
@@ -80,7 +84,12 @@ Repository: {myuser.public_repos}
 </h5>
 <br/>
 <div className="text-center" > 
-<a href={myuser.html_url}  style={{width: "80%", margin: "0 auto"}}  rel="noopener noreferrer" target="_blank" className="btn btn-primary btn-block" >View on Github</a>
+<a href={myuser.html_url}  style={{width: "80%", margin: "0 auto"}}  rel="noopener noreferrer" target="_blank" className="btn btn-primary btn-block" >View on Github</a> <br/>
+<span 
+style={{width: "80%", margin: "0 auto"}}
+onClick={ () => { history.push("/compare") }}
+className="btn btn-success btn-block" >Compare Profile</span>
+
 </div>
   
 <br/>

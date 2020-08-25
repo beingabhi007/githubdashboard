@@ -22,7 +22,7 @@ body {
 } 
 #section4 
 {
-    height: 55vh;
+    height: 75vh;
 }
 
 #text1 
@@ -39,6 +39,8 @@ body {
     font-weight: 800; 
     font-size: 1.9rem; 
     text-align: center;
+    margin-top: 20px;
+
 }
 #image2 
 { 
@@ -99,18 +101,19 @@ body {
 #image2 
 {
     width: 100%; 
-    height: 80vh; 
+    height: 82vh; 
     margin-top: 20px;
 } 
 #section3 
 {
-    height: 88vh;
+    height: 90vh;
 } 
 #text2
 {
     color: white; 
     font-weight: 800; 
     font-size: 2.5rem;
+    margin-top: 20px;
 } 
 #text3 
 {

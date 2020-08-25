@@ -46,7 +46,7 @@ const Login = () => {
   return(
     <section> 
 
-<div className="row">
+<div className="row" style={{margin: "0"}}>
 <div className="col-lg-5" style={{backgroundColor: "#2ecc72"}} id="section1" > 
 <div className="first"> 
 <h1 className="text-white text-center mt-5">Welcome Back</h1> 
@@ -56,7 +56,7 @@ const Login = () => {
 
 <div className="col-lg-7" style={{backgroundColor: "#2C3335" }} id="section2">
 <br/><br/>
-<div className="row">
+<div className="row" style={{margin: "0"}}>
 <div className="col-8 mx-auto">   
 <h2 className="text-white text-center " >Login</h2><br/>
 <div className="formcontent" >

@@ -7,13 +7,13 @@ const Hero = () => {
   return(
    
   <section> 
-   <div className="row">
+   <div className="row" style={{margin: "0"}}>
     <div className="col-12" style={{backgroundColor: "#222831"}} >
   <p id="text1" >Github Dashboard</p>
     </div>   
    </div> 
   
-  <div className="row">
+  <div className="row" style={{margin: "0"}} >
   <div className="col-lg-6" style={{backgroundColor: "#64B6AC"}} id="section3" >
  <img src="/team.svg" alt="" id="image2" />
   </div> 
@@ -24,9 +24,9 @@ const Hero = () => {
  <p id="text2">sending a Rover to Mars,</p>
  <p id="text2"> there’s room for you here, </p>
  <p id="text2">and that is Github.</p> 
- <div className="text-center">
  
- {/*    */}
+ <div className="text-center">
+<br/><br/>
  <Link to="/register" className="btn border-danger mx-auto text-white" style={{width: "80%"}} >Get Started</Link>
  
  
