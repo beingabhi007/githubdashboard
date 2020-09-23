@@ -35,8 +35,8 @@ user1();
     },[uname2]);
 
 
-  if(uname1=== true && uname2=== true) 
-  {
+  // if(uname1=== true && uname2=== true) 
+  // {
 
     return (
         <> 
@@ -77,8 +77,8 @@ user1();
   <thead className="thead-dark">
     <tr>
       <th scope="col" className="text-center" >Uname</th>
-      <th scope="col" className="text-center">beingabhi007</th>
-      <th scope="col" className="text-center">includepraveen</th>
+      <th scope="col" className="text-center">{uname1}</th>
+      <th scope="col" className="text-center">{uname2}</th>
       
     </tr>
   </thead>
@@ -116,11 +116,12 @@ user1();
   </div>
 
 
-        </> 
-    ) } 
+        </> )
+    // ) } 
 
-    else 
-    {
-      return <Redirect to="/404" />
-    }
+    // else 
+    // {
+    //    //  <Redirect to="/404" />
+    //    return   <h1>Not found</h1>
+    // }
 }
