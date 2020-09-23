@@ -1,7 +1,6 @@
 import React, { useContext,useEffect,useState} from 'react'
 import { UserContext } from "./Context"; 
 import Axios from "axios"
-import {Redirect } from "react-router-dom"
 
 
 export default function CompareStat({uname1,uname2}) {
